@@ -6,7 +6,7 @@ $this->layout = 'login';
 <div class="card-group">
 
   <div class="card p-4">
-    <?= $this->Form->create() ?>
+    <?= $this->Form->create(null, ['url' => ['plugin' => 'CakeDC/Users', 'controller' => 'Users', 'action' => 'login']]) ?>
     <div class="card-body">
       <?php echo $this->Flash->render('auth'); ?>
       <?php echo $this->Flash->render('error'); ?>
